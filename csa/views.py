@@ -16,6 +16,6 @@ def bsc(request):
     # print('Welcome to BSC')
 
 def msc(request):
-    return HttpResponse("Welcome to MSC")
+    return HttpResponse("<h1>Welcome to MSC</h1> <h3>Welcome to MSC</h3>")
     # print('Welcome to MSC')
 
