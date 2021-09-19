@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="{% static 'csa_image.png' %}">
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Welcome to BCA</h1>
+	  <br>
+      <p class="title-font sm:text-2xl text-2xl mb-4 font-small text-white">“When a man learns to love, he must bear the risk of hatred.”</p>
+	  <p class="title-font sm:text-2xl text-2xl mb-4 font-small text-white">“Never give up without even trying. Do what you can, no matter how small the effect it may have!”</p>
+      <br>
+	 
+	  <div class="flex justify-center">
+		<a class="ml-8 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg" href="{% url 'college_home' %}">Home Page</a>
+	  </div>
+    </div>
+  </div>
+</section>
+
+       
+</html>

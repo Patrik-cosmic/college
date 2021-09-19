@@ -2,20 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def admission(request):
-    # print(type(request))
-    # print('admisson room !')
-    return HttpResponse("Admission room !")
+def home(request):
+    return render(request, 'csa/csa.html')
 
 def bca(request):
-    return HttpResponse("Welcome to BCA")
-    # print('Welcome to BCA')
+     return render(request, 'csa/bca.html')
 
 def bsc(request):
-    return HttpResponse("Welcome to BSC")
-    # print('Welcome to BSC')
+    return render(request, 'csa/bsc.html')
 
 def msc(request):
-    return HttpResponse("<h1>Welcome to MSC</h1> <h3>Welcome to MSC</h3>")
-    # print('Welcome to MSC')
+     return render(request, 'csa/msc.html')
 
