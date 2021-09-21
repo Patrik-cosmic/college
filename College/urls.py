@@ -1,4 +1,4 @@
-"""college URL Configuration
+"""College URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -18,7 +18,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('computer/', include('csa.urls')),
-    # path('math/', include('mth.urls')),
-    # path('physics/', include('phy.urls')),
+    path('',include('common.urls')),
+    path('computer/', include('CSA.urls')),
+    
+    path('math/',include('MTH.urls')),
+    path('physics/',include('PHYS.urls')),
 ]
