@@ -15,7 +15,7 @@
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Welcome to CTCJ college {{comment_date}}</h1>
       {% for quote in data %}
-      <p class="title-font sm:text-2xl text-2xl mb-4 font-small text-white">{{ quote.content|truncatechars:9}} {{quote.date_created|timesince}}</p>
+      <p class="title-font sm:text-2xl text-2xl mb-4 font-small text-white">{{ quote.content}}</p>
       {% endfor %}
       <br>
 	  <h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Departments</h1>
